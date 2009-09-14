@@ -1,12 +1,55 @@
 #!/usr/bin/env python
 
+'''
+Copyright (c) 2009, Brian Savage
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+
+    * Redistributions of source code must retain the above copyright notice, 
+      this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright notice,
+      this list of conditions and the following disclaimer in the documentation
+      and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED 
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE 
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE 
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL 
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR 
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER 
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, 
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE 
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+'''
+
+import os
 import sys
 import getopt
 from math import *
 
 file  = ""
 gamma = 0
-opts, args = getopt.getopt(sys.argv[1:], 'f:u:')
+progname = os.path.basename(sys.argv[0])
+
+
+def usage () :
+    print '''Usage ''', progname,'''-u units -f Pole-Zero file
+        -u Units dis | vel | acc [ dis ]
+        -f Pole-Zero file to read'''
+    sys.exit(2)
+
+if len(sys.argv) == 1:
+    usage()
+
+try:
+    opts, args = getopt.getopt(sys.argv[1:], 'f:u:')
+except getopt.GetoptError, err:
+    print progname, "error:", str(err) 
+    usage()
+
 for opt, arg in opts:
     if opt == "-f" :
         file = arg
@@ -53,18 +96,22 @@ fp.close()
 nzeros = nzeros + gamma # Displacement to Velocity
 for i in range(len(zeros),nzeros) :
     zeros.append( complex(0.0, 0.0) )
+while len(zeros) > nzeros :
+    zeros.pop()
 
 
-maxf=12
-minf=0
-nfft  = 8192
+maxf  = 12.0
+minf  = 0.0
+npts  = 8192
 delta = 1.0
-delta_freq = (maxf - minf) / ( nfft * delta )
+delta_freq = (maxf - minf) / ( npts * delta )
+
 X    = list()
 freq = list()
 amp  = list()
 pha  = list()
-for i in range(nfft) :
+
+for i in range(npts) :
     freq.append(delta_freq * i)
     omega = complex(0, 2 * pi * i * delta_freq)
 
@@ -83,3 +130,5 @@ for i in range(nfft) :
 
 for i in range(len(amp)) :
     print "%.6E %.6E %.6f" % ( freq[i], amp[i], pha[i] )
+
+

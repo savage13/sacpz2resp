@@ -1,0 +1,43 @@
+
+sacpz2resp.py
+
+Convert a Sac Pole Zero file into a Amplitude/Phase Response
+
+Option -f filename
+   Sac Pole Zero file should be in an output format as output from rdseed
+   Keys: 
+      ZEROS nzeros
+      zero [ real, imaginary ]
+      ...
+      POLES npoles
+      pole [ real, imaginary ]
+      ...
+      CONSTANT constant value
+
+Option -u units
+   dis - Displacement   [ Zeros are not changed ]
+   vel - Velocity       [ One Zero is removed ]
+   acc - Acceleration   [ Two Zeros are removed ]
+   
+Output on stdout
+   Frequency (Hz) Amplitude (meters) Phase (radians)
+
+Internals:
+  freq = frequency      Hz 
+  z_i                   Zeros
+  p_i                   Poles
+  min_freq, max_freq    Minimum and Maximum Frequencies 
+  npts                  Number of Points to Evaluate 
+  delta                 Spacing in seconds of the time series 
+
+                 (max_freq - min_freq)
+  delta_freq = ------------------------
+                    (npts * delta)
+
+  w = 2 * pi * f         Angular Frequency, Radians
+
+              (w-z_0) (w-z_1) ... (w-z_n)
+  R(w) = C * -----------------------------
+              (w-p_0) (w-p_1) ... (w-p_n)
+
+
