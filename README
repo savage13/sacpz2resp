@@ -1,7 +1,8 @@
 
-sacpz2resp.py
+sacpz2resp.py - Convert a Sac Pole Zero file into a Amplitude/Phase Response
+pz2resp.py - Convert a Sac Pole Zero file into a Resp formatted file 
 
-Convert a Sac Pole Zero file into a Amplitude/Phase Response
+sacpz2resp.py --help 
 
 Option -f filename
    Sac Pole Zero file should be in an output format as output from rdseed
