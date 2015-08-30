@@ -1,0 +1,252 @@
+* **********************************
+* NETWORK   (KNETWK): IU
+* STATION    (KSTNM): ANMO
+* LOCATION   (KHOLE): 00
+* CHANNEL   (KCMPNM): BH1
+* CREATED           : 2015-08-28T18:20:08
+* START             : 2014-12-17T18:40:00
+* END               : 2599-12-31T23:59:59
+* DESCRIPTION       : Albuquerque, New Mexico, USA
+* LATITUDE          : 34.945910
+* LONGITUDE         : -106.457200
+* ELEVATION         : 1671.0
+* DEPTH             : 145.0
+* DIP               : 90.0
+* AZIMUTH           : 18.0
+* SAMPLE RATE       : 20.0
+* INPUT UNIT        : M
+* OUTPUT UNIT       : COUNTS
+* INSTTYPE          : Geotech KS-54000 Borehole Seismometer
+* INSTGAIN          : 2.257000e+03 (M/S)
+* COMMENT           : 
+* SENSITIVITY       : 3.786610e+09 (M/S)
+* A0                : 8.603680e+04
+* **********************************
+ZEROS	3
+	+0.000000e+00	+0.000000e+00	
+	+0.000000e+00	+0.000000e+00	
+	+0.000000e+00	+0.000000e+00	
+POLES	5
+	-5.943130e+01	+0.000000e+00	
+	-2.271210e+01	+2.710650e+01	
+	-2.271210e+01	-2.710650e+01	
+	-4.800400e-03	+0.000000e+00	
+	-7.306130e-02	+0.000000e+00	
+CONSTANT	3.257878e+14
+
+
+* **********************************
+* NETWORK   (KNETWK): IU
+* STATION    (KSTNM): ANMO
+* LOCATION   (KHOLE): 10
+* CHANNEL   (KCMPNM): BH1
+* CREATED           : 2015-08-28T18:20:08
+* START             : 2014-08-12T00:00:00
+* END               : 2599-12-31T23:59:59
+* DESCRIPTION       : Albuquerque, New Mexico, USA
+* LATITUDE          : 34.945910
+* LONGITUDE         : -106.457200
+* ELEVATION         : 1730.5
+* DEPTH             : 90.2
+* DIP               : 90.0
+* AZIMUTH           : 71.0
+* SAMPLE RATE       : 40.0
+* INPUT UNIT        : M
+* OUTPUT UNIT       : COUNTS
+* INSTTYPE          : T120 post hole, quiet
+* INSTGAIN          : 1.177000e+03 (M/S)
+* COMMENT           : 
+* SENSITIVITY       : 1.974680e+09 (M/S)
+* A0                : 8.465850e+17
+* **********************************
+ZEROS	7
+	+0.000000e+00	+0.000000e+00	
+	+0.000000e+00	+0.000000e+00	
+	+0.000000e+00	+0.000000e+00	
+	-3.163000e+01	+0.000000e+00	
+	-1.600000e+02	+0.000000e+00	
+	-3.500000e+02	+0.000000e+00	
+	-3.177000e+03	+0.000000e+00	
+POLES	11
+	-3.680560e-02	+3.626490e-02	
+	-3.680560e-02	-3.626490e-02	
+	-3.255000e+01	+0.000000e+00	
+	-1.420000e+02	+0.000000e+00	
+	-3.640000e+02	+4.040000e+02	
+	-3.640000e+02	-4.040000e+02	
+	-1.260000e+03	+0.000000e+00	
+	-4.900000e+03	-5.200000e+03	
+	-4.900000e+03	+5.200000e+03	
+	-7.100000e+03	-1.700000e+03	
+	-7.100000e+03	+1.700000e+03	
+CONSTANT	1.671734e+27
+
+
+* **********************************
+* NETWORK   (KNETWK): IU
+* STATION    (KSTNM): ANMO
+* LOCATION   (KHOLE): 00
+* CHANNEL   (KCMPNM): BH2
+* CREATED           : 2015-08-28T18:20:08
+* START             : 2014-12-17T18:40:00
+* END               : 2599-12-31T23:59:59
+* DESCRIPTION       : Albuquerque, New Mexico, USA
+* LATITUDE          : 34.945910
+* LONGITUDE         : -106.457200
+* ELEVATION         : 1671.0
+* DEPTH             : 145.0
+* DIP               : 90.0
+* AZIMUTH           : 108.0
+* SAMPLE RATE       : 20.0
+* INPUT UNIT        : M
+* OUTPUT UNIT       : COUNTS
+* INSTTYPE          : Geotech KS-54000 Borehole Seismometer
+* INSTGAIN          : 1.912000e+03 (M/S)
+* COMMENT           : 
+* SENSITIVITY       : 3.207800e+09 (M/S)
+* A0                : 8.669050e+04
+* **********************************
+ZEROS	3
+	+0.000000e+00	+0.000000e+00	
+	+0.000000e+00	+0.000000e+00	
+	+0.000000e+00	+0.000000e+00	
+POLES	5
+	-5.943130e+01	+0.000000e+00	
+	-2.271210e+01	+2.710650e+01	
+	-2.271210e+01	-2.710650e+01	
+	-4.800400e-03	+0.000000e+00	
+	-7.523490e-02	+0.000000e+00	
+CONSTANT	2.780858e+14
+
+
+* **********************************
+* NETWORK   (KNETWK): IU
+* STATION    (KSTNM): ANMO
+* LOCATION   (KHOLE): 10
+* CHANNEL   (KCMPNM): BH2
+* CREATED           : 2015-08-28T18:20:08
+* START             : 2014-08-12T00:00:00
+* END               : 2599-12-31T23:59:59
+* DESCRIPTION       : Albuquerque, New Mexico, USA
+* LATITUDE          : 34.945910
+* LONGITUDE         : -106.457200
+* ELEVATION         : 1730.5
+* DEPTH             : 90.2
+* DIP               : 90.0
+* AZIMUTH           : 161.0
+* SAMPLE RATE       : 40.0
+* INPUT UNIT        : M
+* OUTPUT UNIT       : COUNTS
+* INSTTYPE          : T120 post hole, quiet
+* INSTGAIN          : 1.177000e+03 (M/S)
+* COMMENT           : 
+* SENSITIVITY       : 1.974680e+09 (M/S)
+* A0                : 8.465850e+17
+* **********************************
+ZEROS	7
+	+0.000000e+00	+0.000000e+00	
+	+0.000000e+00	+0.000000e+00	
+	+0.000000e+00	+0.000000e+00	
+	-3.163000e+01	+0.000000e+00	
+	-1.600000e+02	+0.000000e+00	
+	-3.500000e+02	+0.000000e+00	
+	-3.177000e+03	+0.000000e+00	
+POLES	11
+	-3.680560e-02	+3.626490e-02	
+	-3.680560e-02	-3.626490e-02	
+	-3.255000e+01	+0.000000e+00	
+	-1.420000e+02	+0.000000e+00	
+	-3.640000e+02	+4.040000e+02	
+	-3.640000e+02	-4.040000e+02	
+	-1.260000e+03	+0.000000e+00	
+	-4.900000e+03	-5.200000e+03	
+	-4.900000e+03	+5.200000e+03	
+	-7.100000e+03	-1.700000e+03	
+	-7.100000e+03	+1.700000e+03	
+CONSTANT	1.671734e+27
+
+
+* **********************************
+* NETWORK   (KNETWK): IU
+* STATION    (KSTNM): ANMO
+* LOCATION   (KHOLE): 00
+* CHANNEL   (KCMPNM): BHZ
+* CREATED           : 2015-08-28T18:20:08
+* START             : 2014-12-17T18:40:00
+* END               : 2599-12-31T23:59:59
+* DESCRIPTION       : Albuquerque, New Mexico, USA
+* LATITUDE          : 34.945910
+* LONGITUDE         : -106.457200
+* ELEVATION         : 1671.0
+* DEPTH             : 145.0
+* DIP               : 0.0
+* AZIMUTH           : 0.0
+* SAMPLE RATE       : 20.0
+* INPUT UNIT        : M
+* OUTPUT UNIT       : COUNTS
+* INSTTYPE          : Geotech KS-54000 Borehole Seismometer
+* INSTGAIN          : 2.029000e+03 (M/S)
+* COMMENT           : 
+* SENSITIVITY       : 3.404090e+09 (M/S)
+* A0                : 8.629950e+04
+* **********************************
+ZEROS	3
+	+0.000000e+00	+0.000000e+00	
+	+0.000000e+00	+0.000000e+00	
+	+0.000000e+00	+0.000000e+00	
+POLES	5
+	-5.943130e+01	+0.000000e+00	
+	-2.271210e+01	+2.710650e+01	
+	-2.271210e+01	-2.710650e+01	
+	-4.800400e-03	+0.000000e+00	
+	-7.394060e-02	+0.000000e+00	
+CONSTANT	2.937713e+14
+
+
+* **********************************
+* NETWORK   (KNETWK): IU
+* STATION    (KSTNM): ANMO
+* LOCATION   (KHOLE): 10
+* CHANNEL   (KCMPNM): BHZ
+* CREATED           : 2015-08-28T18:20:08
+* START             : 2014-08-12T00:00:00
+* END               : 2599-12-31T23:59:59
+* DESCRIPTION       : Albuquerque, New Mexico, USA
+* LATITUDE          : 34.945910
+* LONGITUDE         : -106.457200
+* ELEVATION         : 1730.5
+* DEPTH             : 90.2
+* DIP               : 0.0
+* AZIMUTH           : 0.0
+* SAMPLE RATE       : 40.0
+* INPUT UNIT        : M
+* OUTPUT UNIT       : COUNTS
+* INSTTYPE          : T120 post hole, quiet
+* INSTGAIN          : 1.177000e+03 (M/S)
+* COMMENT           : 
+* SENSITIVITY       : 1.974680e+09 (M/S)
+* A0                : 8.465850e+17
+* **********************************
+ZEROS	7
+	+0.000000e+00	+0.000000e+00	
+	+0.000000e+00	+0.000000e+00	
+	+0.000000e+00	+0.000000e+00	
+	-3.163000e+01	+0.000000e+00	
+	-1.600000e+02	+0.000000e+00	
+	-3.500000e+02	+0.000000e+00	
+	-3.177000e+03	+0.000000e+00	
+POLES	11
+	-3.680560e-02	+3.626490e-02	
+	-3.680560e-02	-3.626490e-02	
+	-3.255000e+01	+0.000000e+00	
+	-1.420000e+02	+0.000000e+00	
+	-3.640000e+02	+4.040000e+02	
+	-3.640000e+02	-4.040000e+02	
+	-1.260000e+03	+0.000000e+00	
+	-4.900000e+03	-5.200000e+03	
+	-4.900000e+03	+5.200000e+03	
+	-7.100000e+03	-1.700000e+03	
+	-7.100000e+03	+1.700000e+03	
+CONSTANT	1.671734e+27
+
+
